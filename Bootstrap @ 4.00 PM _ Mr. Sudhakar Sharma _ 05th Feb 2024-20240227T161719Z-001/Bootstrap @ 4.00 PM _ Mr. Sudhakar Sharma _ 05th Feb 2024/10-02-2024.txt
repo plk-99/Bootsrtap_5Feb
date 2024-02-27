@@ -1,0 +1,532 @@
+Dropdown
+Nav & Tabs
+Navbar
+Collapse
+Accordion
+
+							Cards
+Classes:
+	.card
+	.card-header
+	.card-body
+	.card-footer
+	.card-title
+	.card-subtitle
+	.card-img-top
+	.card-img-overlay
+
+Syntax:
+	<div class="card">
+	   <div class="card-header"> </div>
+	   <div class="card-body"> </div>
+	   <div class="card-footer"> </div>
+	</div>
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container-fluid">
+    <main class="mt-4 d-flex">
+        <div class="card p-1 m-2" style="width: 300px;">
+            <div class="card-header">
+                <h5 class="card-title">Bluetooth Calling Smartwatch starts at..</h5>
+            </div>
+            <div class="card-body">
+                <img src="images/watch.jpg" class="card-img-top">
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-primary w-100 bi bi-cart4"> Add to Cart</button>
+            </div>
+        </div>
+        <div class="card p-1 m-2" style="width: 300px;">
+            <div class="card-header">
+                <h5 class="card-title">Bluetooth Calling Smartwatch starts at..</h5>
+            </div>
+            <div class="card-body">
+                <img src="images/watch.jpg" class="card-img-top">
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-primary w-100 bi bi-cart4"> Add to Cart</button>
+            </div>
+        </div>
+        <div class="card p-1 m-2" style="width: 300px;">
+            <div class="card-header">
+                <h5 class="card-title">Bluetooth Calling Smartwatch starts at..</h5>
+            </div>
+            <div class="card-body">
+                <img src="images/watch.jpg" class="card-img-top">
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-primary w-100 bi bi-cart4"> Add to Cart</button>
+            </div>
+        </div>
+        <div class="card p-1 m-2" style="width: 300px;">
+            <img src="images/watch.jpg" class="card-img-top">
+            <div class="card-header">
+                <h5 class="card-title">Bluetooth Calling Smartwatch starts at..</h5>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li>Fossil</li>
+                    <li>Fastrack</li>
+                    <li>Apple</li>
+                </ul>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-primary w-100 bi bi-cart4"> Add to Cart</button>
+            </div>
+        </div>
+    </main>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
+
+						       badge
+classes:
+	.badge
+	.bg-{contextual}
+	.text-{contextual}
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container-fluid">
+    
+     <button class="btn btn-dark mt-3 position-relative">
+        <span class="bi bi-bell-fill"></span> Subscribed <span class="badge position-absolute bg-danger rounded rounded-circle">3</span>
+     </button>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
+			
+							Pagination
+Classes:
+	.pagination
+	.page-item
+	.page-link
+	.active
+	.disabled
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container-fluid">
+    
+    <h2>Pagination</h2>
+
+    <ul class="pagination">
+        <li class="page-item"> <a class="page-link"> &laquo; </a> </li>
+        <li class="page-item"> <a class="page-link">1</a> </li>
+        <li class="page-item"> <a class="page-link">2</a> </li>
+        <li class="page-item active"> <a class="page-link">3</a> </li>
+        <li class="page-item disabled"> <a class="page-link">4</a> </li>
+        <li class="page-item"> <a class="page-link">&raquo;</a> </li>
+    </ul>
+    
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
+
+						      Progress Bar
+Classes:
+	.progress
+	.progress-bar
+	.progress-bar-striped
+	.progress-bar-animated
+	
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container-fluid">
+     
+     <h2>HTML Progress</h2>
+     <progress min="1" max="100" value="20"> 20% Completed </progress> 
+     <h2>Bootstrap Progress</h2>
+     <div class="progress">
+        <div class="progress-bar me-1 progress-bar-striped progress-bar-animated bg-success" style="width: 25%;"> 25% Completed </div>
+        <div class="progress-bar me-1 progress-bar-striped progress-bar-animated bg-warning" style="width: 50%;"> 50% Pending </div>
+        <div class="progress-bar bg-danger" style="width: 25%;"> Unknown </div>
+     </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
+							Spinners
+Classes:
+	.spinner-border
+	.spinner-border-sm | lg
+	.spinner-grow
+	.spinner-grow-sm | lg
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container-fluid">
+    
+    <h2>Spinners</h2>
+    <div class="spinner-border text-success"></div>
+    <div class="spinner-grow text-danger"></div>
+
+    <button class="btn btn-primary">
+        <span class="spinner-border spinner-border-sm"></span> Loading..
+    </button>
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
+
+							 Tables
+Classes:
+	.table
+	.table-hover
+	.table-{contextual}
+	.table-striped
+	.table-bordered
+	.table-responsive
+	.caption-top
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container-fluid">
+    
+    <h1>Bootstrap Table</h1>
+
+    <div class="table-responsive">
+        <table class="mt-4 table table-hover table-danger table-striped table-bordered caption-top">
+            <caption>Products List - Updated on 10-02-2024</caption>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+    
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
+
+							Bread Crumb
+Classes:
+	.breadcrumb
+	.breadcrumb-item
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container-fluid">
+    
+     <h2>Shopper</h2>
+
+     <ul class="breadcrumb">
+        <li class="breadcrumb-item">Home</li>
+        <li class="breadcrumb-item">Electronics</li>
+        <li class="breadcrumb-item active text-primary">Mobiles</li>
+        <li class="breadcrumb-item">Apple</li>
+        <li class="breadcrumb-item">Iphone 14</li>
+     </ul>
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
+
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        ul {
+            list-style: none;
+            display: flex;
+        }
+        li::after {
+            content: " --> ";
+        }
+        li:last-child::after {
+            content: "";
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    
+     <h2>Shopper</h2>
+
+     <ul>
+        <li>Home</li>
+        <li>Electronics</li>
+        <li>Mobiles</li>
+        <li>Apple</li>
+        <li>Iphone 14</li>
+     </ul>
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
+
+							 Grid Style
+Classes:
+	.row
+	.col
+	.col-{size} 1 to 12 
+	
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+    
+    </style>
+</head>
+<body class="container-fluid">
+    
+    <footer class="row bg-dark p-3 text-white">
+        <div class="col">
+            <ul class="list-unstyled">
+                <div class="fw-bold">Get to Know Us</div>
+                <li>About Us</li>
+                <li>Careers</li>
+                <li>Press Releases</li>
+                <li>Amazon Science</li>
+            </ul>
+        </div>
+        <div class="col">
+            <ul class="list-unstyled">
+                <div class="fw-bold">Get to Know Us</div>
+                <li>About Us</li>
+                <li>Careers</li>
+                <li>Press Releases</li>
+                <li>Amazon Science</li>
+            </ul>
+        </div>
+        <div class="col">
+            <ul class="list-unstyled">
+                <div class="fw-bold">Get to Know Us</div>
+                <li>About Us</li>
+                <li>Careers</li>
+                <li>Press Releases</li>
+                <li>Amazon Science</li>
+            </ul>
+        </div>
+        <div class="col">
+            <ul class="list-unstyled">
+                <div class="fw-bold">Get to Know Us</div>
+                <li>About Us</li>
+                <li>Careers</li>
+                <li>Press Releases</li>
+                <li>Amazon Science</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+    
+    </style>
+</head>
+<body class="container-fluid">
+    <header class="bg-primary">
+        Header
+    </header>
+     <div class="row">
+        <nav class="col-1 border border-1 bg-dark"> Nav </nav>
+        <main class="col-9 bg-warning" style="height: 300px;">
+            Main
+        </main>
+        <aside class="col-2 bg-danger">
+            Ads
+        </aside>
+     </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

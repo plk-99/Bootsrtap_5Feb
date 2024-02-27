@@ -1,0 +1,358 @@
+Bootstrap @ 4:00 PM (IST) By Mr.Sudhakar Sharma
+Day-1 https://youtu.be/pELO_c4XdSA
+Day-2 https://youtu.be/sf_JNETMxPU
+Day-3 https://youtu.be/zs2DO-cxr6E
+Day-4 https://youtu.be/4O7RV6yDmCk
+
+
+
+1. alerts
+2. modal
+3. offcanvas
+4. carousel
+							Collapse
+
+- It is used to show / hide any content in page dynamically.
+
+Classes:
+	.collapse
+	.show
+
+Attributes:
+	data-bs-target
+	data-bs-toggle
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container-fluid">
+    <button data-bs-toggle="collapse" data-bs-target="#q1" class="btn btn-dark w-100 mt-3"> What is Netflix? </button>
+    <div class="collapse bg-dark text-white mt-1 p-2" id="q1">
+        <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.</p>
+        <p> You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
+
+
+						  Accordion
+- It uses a mutex mechanism to show or hide content.
+- Mutex is "Mutual Exclusion".
+- It hides all other contents in a category when any one is selected.
+
+Classes:
+	.accordion
+	.accordion-item
+	.accordion-content
+	.accordion-header
+	.accordion-body
+	.accordion-collapse
+	.accordion-button
+
+Attributes:
+	data-bs-target
+	data-bs-toggle
+	data-bs-parent
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container-fluid">
+    <h1 class="text-center">Frequently Asked Questions</h1>
+    <div class="accordion" id="faq">
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <button data-bs-target="#q1" data-bs-toggle="collapse" class="accordion-button"> What is Netflix? </button>
+            </div>
+            <div class="accordion-collapse collapse" id="q1" data-bs-parent="#faq">
+                <div class="accordion-body">
+                    <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.</p>
+                    <p> You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <button data-bs-target="#q2" data-bs-toggle="collapse" class="accordion-button"> How much does Netflix Cost? </button>
+            </div>
+            <div class="accordion-collapse collapse" id="q2" data-bs-parent="#faq">
+                <div class="accordion-body">
+                    <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.</p>
+                    <p> You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
+
+						   Dropdown
+- HTML dropdown will not allow symbols, icons or images as it is "RC data type".
+  [Rich Content Data Elements]
+- Bootstrap dropdown allows complex content. [ symbols, icons, links, formats..]
+
+Classes:
+	.dropdown
+	.dropup
+	.dropend
+	.dropstart
+	.dropdown-menu
+	.dropdown-item
+	.dropdown-toggle
+	.dropdown-divider
+	.dropdown-item-text
+
+Attribute:
+	data-bs-toggle="dropdown"
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container-fluid">
+    <h2>Dropdown</h2>
+   
+    <div class="dropend">
+        <button data-bs-toggle="dropdown" class="btn btn-dark dropdown-toggle"> <span class="bi bi-translate"></span> Flipkart </button>
+        <ul class="dropdown-menu" data-bs-theme="dark">
+            <li class="dropdown-item"> <span class="dropdown-item-text"><span class="bi bi-person-circle"></span> Profile</span> </li>
+            <li class="dropdown-item"> <span class="dropdown-item-text"> <span class="bi bi-heart"></span> Whishlist </span> </li>
+            <li class="dropdown-divider"></li>
+            <li class="dropdown-item"> <span class="dropdown-item-text"> <span> Help </span> </span> </li>
+        </ul>
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
+
+						    Nav & Tabs
+- They can create tab based navigation.
+- You can display multiple categories of content in one page.
+- User can switch between categories dynamically.
+
+Classes:
+	.nav
+	.nav-tabs
+	.nav-pills
+	.nav-item
+	.nav-link
+	.tab-content
+	.tab-pane
+	.active
+
+Note: If you are using <a> element then you can define "href" as "data-bs-target".
+
+Syntax:
+		<button data-bs-target="#login"  data-bs-toggle="tab">
+		<a href="#login" data-bs-toggle="tab">
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container-fluid">
+    <h1>Shopper.</h1>
+    <ul class="nav nav-tabs">
+        <li class="nav-item"> <a href="#login" data-bs-toggle="tab" class="nav-link active"> Login </a> </li>
+        <li class="nav-item"> <a href="#register" data-bs-toggle="tab" class="nav-link"> Register </a> </li>
+        <li class="nav-item"> <a href="#recover" data-bs-toggle="tab" class="nav-link"> Recover Account </a> </li>
+    </ul>
+    <div class="tab-content mt-4">
+        <div class="tab-pane active" id="login">
+            <dl>
+                <dt>User Name</dt>
+                <dd><input type="text"></dd>
+                <dt>Password</dt>
+                <dd><input type="password"></dd>
+            </dl>
+            <button class="btn btn-primary">Login</button>
+        </div>
+        <div class="tab-pane" id="register">
+            <dl>
+                <dt>User Name</dt>
+                <dd><input type="text"></dd>
+                <dt>Password</dt>
+                <dd><input type="password"></dd>
+                <dt>Mobile</dt>
+                <dd><input type="text"></dd>
+                <dt>Age</dt>
+                <dd><input type="number"></dd>
+            </dl>
+            <button class="btn btn-primary">Register</button>
+        </div>
+        <div class="tab-pane" id="recover">
+            <input type="email" placeholder="Your email">
+            <button class="btn btn-primary">Recover</button>
+        </div>
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
+
+ 					            Navbar
+- It configures a responsive navigation.
+- It can change according to device screen, orientation, width and other values.
+
+Classes:
+	.navbar
+	.navbar-expand-lg | sm
+	.navbar-toggler
+	.navbar-toggler-icon
+	.navbar-brand
+	.navbar-nav
+	.navbar-collapse
+	.nav-item
+	.nav-link
+	.navbar-dark
+	.navbar-{contextual}
+	.navbar-light
+	
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <button data-bs-target="#menu" data-bs-toggle="collapse" class="navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <h2 class="navbar-brand">Shopper.</h2>
+            <div class="navbar-collapse collapse" id="menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item"> <a class="nav-link">Home</a> </li>
+                    <li class="nav-item"> <a class="nav-link">Shop</a> </li>
+                    <li class="nav-item"> <a class="nav-link">Pages</a> </li>
+                    <li class="nav-item"> <a class="nav-link">Blog</a> </li>
+                    <li class="nav-item"> <a class="nav-link">Contact</a> </li>
+                    <li class="nav-item">
+                        <div class="input-group">
+                            <select class="input-group-text">
+                                <option>All</option>
+                            </select>
+                            <input type="text" class="form-control">
+                            <button class="bi bi-search btn btn-warning"></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

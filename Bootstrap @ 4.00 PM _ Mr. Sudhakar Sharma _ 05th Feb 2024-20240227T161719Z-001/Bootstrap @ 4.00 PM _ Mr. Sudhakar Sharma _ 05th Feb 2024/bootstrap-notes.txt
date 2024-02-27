@@ -1,0 +1,209 @@
+							Bootstrap
+1. What is Bootstrap?
+A. It is a component library used to build interactive UI faster.
+     It is open source and cross platform library for building UI.
+
+2. What is component library?
+A. A component comprises of
+	a) Markup			=> HTML
+	b) Styles				=> CSS
+	c) Functionality		=> JavaScript
+
+3. What are other libraries like bootstrap?
+A.
+	 a) Twitter Bootstrap
+	 b) Tailwind
+	 c) Telerik
+	 d) Mui
+	 e) DevExpress
+	 etc..
+
+4. Bootstrap Versions
+	- Projects in real-time may be using bootstrap 3 & 4 versions
+	- Latest version of bootstrap is "Bootstrap 5"
+
+
+Setup Environment for Bootstrap in Project:
+
+1. Download and Install "Node JS" on your PC
+     - Node JS provides a package manager tool called NPM
+     - Package Manager is used to install, update or uninstall any library required for
+       package.
+     - There are various other package managers
+		a) Yarn
+		b) Bower
+		c) RubyGEMS
+		d) Composer 
+		etc..
+
+	https://nodejs.org/en
+
+    - After installing check the versions from command prompt
+
+		C:\> node -v
+		C:\> npm  -v
+
+2. Download and Install "Visual Studio Code". [Editor]
+
+3. Open Visual Studio Code editor and Install the following extentions
+
+		- Live Server
+		- vscode-icons
+		- IntelliSense for CSS class names in HTML
+
+
+Create a Project for bootstrap template design
+1. Open any location on your PC and create a folder
+
+		D:\bootstrap-workshop
+
+2. Open folder in Visual Studio Code
+
+3. Open Terminal in Visual Studio Code [   Ctrl +  `  ]
+           Terminal Menu -> New Terminal
+
+	   > npm  install  bootstrap   bootstrap-icons   jquery   --save
+
+4. All library files are installed into a folder "node_modules"
+
+5. The project with bootstrap requires following libraries
+			a) Popper
+			b) Bootstrap
+			c) Bootstrap-Icons
+			d) jQuery
+
+6. Add following folders into project
+
+		> public			: to keep all static resources, html, images, docs, video..
+		> src			: to keep all dynamic resources, css, scss, js, ts, jsx etc..
+
+7. Add a new file "index.html" into public folder
+
+8. Design your HTML page
+
+9. Right Click in the page => Open with Live Server
+
+10. To use bootstrap in any page you have to link the following files
+
+<head>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body>
+
+	<script src="../node_modules/jquery/dist/jquery.js"> </script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"> </script>
+</body>
+
+						Bootstrap Icons
+- Every icon is defined using class name
+			
+			bi bi-twitter
+			bi bi-facebook
+			bi bi-house
+			bi bi-person-fill
+
+- Classes are applied to any HTML element by using "class" attribute.
+
+			https://icons.getbootstrap.com/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
