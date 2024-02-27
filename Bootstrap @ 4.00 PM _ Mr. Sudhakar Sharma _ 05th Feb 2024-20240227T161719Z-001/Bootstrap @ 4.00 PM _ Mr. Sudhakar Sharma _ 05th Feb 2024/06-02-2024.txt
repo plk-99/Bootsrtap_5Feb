@@ -1,0 +1,429 @@
+To use bootstrap and icons in any page you can link CDN directly and implement
+ [Content Delivery Network]
+
+1. Visit the website "getbootstrap.com"
+2. Click on "Download"
+3. Go to "CDN" category
+
+4. Copy the links and paste in Head section of page.
+
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+5. For icons  goto  "bootstrap" icons category and copy the CDN link
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+				  Bootstrap Classes for CSS Attributes						
+1. Container Classes
+		.container
+		.container-sm			mobile
+		.container-md			tab
+		.container-lg			pc
+		.container-xl			laptop
+		.container-xxl			laptop wide
+		.container-fluid		responsive according to device
+Syntax:
+	<body class="container-fluid">
+	</body>
+
+2. Box Model
+
+Margins:
+		.m-{break-point}		margin all directions size 1  to  4.
+		.ms-{ }				left margin [start]
+		.me-{ }				right [end]
+		.mt-{ }				top
+		.mb-{ }				bottom
+		.mx-{ }				both left and right
+		.my-{ }				both top and botton
+
+	<div  class="mt-4">
+
+Padding:
+		.p-{ }					Padding all directions
+		.pt-{ }
+		.pb-{ }
+		.ps-{ }
+		.pe-{ }
+		.px-{ }
+		.py-{ }
+
+Border:
+		.border
+		.border-{size}			0 to 4
+		.border-{contextual}	primary, secondary, danger, warning, success, info..
+
+Syntax:
+	<p  class="border border-3 border-danger p-4">
+
+	</p>
+
+Border Radius:
+	.rounded
+	.rounded-{size}		1 to 4
+	.rounded-circle
+	.rounded-pill
+
+Syntax:
+	<img src="images/pic.jpg"  class="rounded  rounded-circle" width="200" height="200">
+
+Width & Height:
+		.w-{size}		25, 50, 100
+		.h-{size}		25, 50, 100
+
+Syntax:
+		<p  class="w-50">  </p>
+
+Summary
+- Margin
+- Padding
+- Border
+- Border Radius
+- Width
+- Height
+
+3. Text & Background colors
+
+	.bg-{contextual}		primary, secondary, danger, warning, success etc..
+	.text-{contextual}
+
+Syntax:
+	<p  class="bg-danger text-white">
+	<h1 class="bg-warning text-danger">
+
+4. Positions
+
+	 .position-static
+	 .position-absolute
+	 .position-relative
+	 .position-fixed
+	 .position-sticky
+	 .start-{ }			0, 25, 100
+	 .end-{ }
+	 .top-{ }
+	 .bottom-{ }
+
+Syntax:
+	<button class="position-relative">
+		<span> Subscribed </span>
+		<span class="position-absolute top-0"> 3 </span>
+	</button>
+
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container-fluid">
+
+    <div class="mt-4">
+        <button class="bi bi-cart4 position-relative btn btn-dark"> <span class="badge bg-danger position-absolute top-0 text-white rounded rounded-circle">3</span> </button>
+    </div>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat neque, alias corrupti porro amet ratione. Corrupti officiis sint earum, nesciunt nostrum ipsam ut magnam nisi neque voluptatibus delectus, veniam iste.
+    </p>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat neque, alias corrupti porro amet ratione. Corrupti officiis sint earum, nesciunt nostrum ipsam ut magnam nisi neque voluptatibus delectus, veniam iste.
+    </p>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat neque, alias corrupti porro amet ratione. Corrupti officiis sint earum, nesciunt nostrum ipsam ut magnam nisi neque voluptatibus delectus, veniam iste.
+    </p>
+    <nav class="bg-dark text-white p-2 position-sticky top-0">
+        <h3>Quick Booking</h3>
+    </nav>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat neque, alias corrupti porro amet ratione. Corrupti officiis sint earum, nesciunt nostrum ipsam ut magnam nisi neque voluptatibus delectus, veniam iste.
+    </p>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat neque, alias corrupti porro amet ratione. Corrupti officiis sint earum, nesciunt nostrum ipsam ut magnam nisi neque voluptatibus delectus, veniam iste.
+    </p>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat neque, alias corrupti porro amet ratione. Corrupti officiis sint earum, nesciunt nostrum ipsam ut magnam nisi neque voluptatibus delectus, veniam iste.
+    </p>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat neque, alias corrupti porro amet ratione. Corrupti officiis sint earum, nesciunt nostrum ipsam ut magnam nisi neque voluptatibus delectus, veniam iste.
+    </p>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat neque, alias corrupti porro amet ratione. Corrupti officiis sint earum, nesciunt nostrum ipsam ut magnam nisi neque voluptatibus delectus, veniam iste.
+    </p>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat neque, alias corrupti porro amet ratione. Corrupti officiis sint earum, nesciunt nostrum ipsam ut magnam nisi neque voluptatibus delectus, veniam iste.
+    </p>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat neque, alias corrupti porro amet ratione. Corrupti officiis sint earum, nesciunt nostrum ipsam ut magnam nisi neque voluptatibus delectus, veniam iste.
+    </p>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat neque, alias corrupti porro amet ratione. Corrupti officiis sint earum, nesciunt nostrum ipsam ut magnam nisi neque voluptatibus delectus, veniam iste.
+    </p>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat neque, alias corrupti porro amet ratione. Corrupti officiis sint earum, nesciunt nostrum ipsam ut magnam nisi neque voluptatibus delectus, veniam iste.
+    </p>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat neque, alias corrupti porro amet ratione. Corrupti officiis sint earum, nesciunt nostrum ipsam ut magnam nisi neque voluptatibus delectus, veniam iste.
+    </p>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat neque, alias corrupti porro amet ratione. Corrupti officiis sint earum, nesciunt nostrum ipsam ut magnam nisi neque voluptatibus delectus, veniam iste.
+    </p>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat neque, alias corrupti porro amet ratione. Corrupti officiis sint earum, nesciunt nostrum ipsam ut magnam nisi neque voluptatibus delectus, veniam iste.
+    </p>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat neque, alias corrupti porro amet ratione. Corrupti officiis sint earum, nesciunt nostrum ipsam ut magnam nisi neque voluptatibus delectus, veniam iste.
+    </p>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat neque, alias corrupti porro amet ratione. Corrupti officiis sint earum, nesciunt nostrum ipsam ut magnam nisi neque voluptatibus delectus, veniam iste.
+    </p>
+    
+    <aside class="text-info position-fixed end-0 bottom-0">
+        <div class="bi bi-facebook"></div>
+        <div class="bi bi-twitter"></div>
+        <div class="bi bi-instagram"></div>
+        <div class="bi bi-linkedin"></div>
+    </aside>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        .women {
+            background-image: url("images/women-fashion.jpg");
+            background-size: cover;
+            width: 400px;
+            height: 300px;
+            padding: 30px;
+        }
+        .offer {
+            width: 80px;
+            height: 80px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <div class="women position-relative">
+        <div class="bg-danger position-absolute top-0 end-0 text-white p-2 rounded rounded-circle offer">
+            <div>Save</div>
+            <div>50%</div>
+        </div>
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
+
+5. Display
+		.d			display
+		.d-none
+		.d-inline
+		.d-inline-block
+		.d-block
+		.d-flex
+		.flex-wrap
+		.flex-row
+		.flex-column
+		.justify-content-between
+		.justify-content-around
+		.justify-content-center
+		.align-items-center
+		.align-items-start
+		.align-items-end
+		.align-items-baseline
+
+6. Text Align
+		.text-start
+		.text-end
+		.text-center
+
+
+
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+       
+    </style>
+</head>
+<body class="container-fluid">
+    <header class="p-3 d-flex justify-content-between">
+        <div>
+            <h3>Shopper.</h3>
+        </div>
+        <div>   
+            <span class="me-3">Home</span>
+            <span class="me-3">Catalog</span>
+            <span class="me-3">Shop</span>
+            <span class="me-3">Pages</span>
+            <span class="me-3">Blog</span>
+            <span class="me-3">Docs</span>
+        </div>
+        <div>
+            <span class="bi bi-search me-3"></span>
+            <span class="bi bi-person me-3"></span>
+            <span class="bi bi-heart me-3"></span>
+            <span class="bi bi-cart me-3 position-relative"> <span class="position-absolute top-0 badge bg-danger rounded rounded-circle">2</span> </span>
+        </div>
+    </header>
+    <article class="bg-dark text-white p-2 text-center">
+         <span class="bi text-warning bi-lightning-fill"></span>
+         <span> HAPPY HOLIDAY DEALS ON EVERYTHING  </span>
+         <span class="bi text-warning bi-lightning-fill"></span>
+         
+    </article>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
